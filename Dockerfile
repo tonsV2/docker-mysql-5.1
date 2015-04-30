@@ -1,4 +1,4 @@
-FROM debia:wheezy
+FROM debian:wheezy
 
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 
