@@ -3,7 +3,7 @@ FROM debian:wheezy
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 
 RUN apt-get update && \
-    apt-get install -y curl binutils
+    apt-get install -y curl binutils locale-gen
 
 RUN gpg --keyserver pgp.mit.edu --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
 
