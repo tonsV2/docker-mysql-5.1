@@ -41,4 +41,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 3306
 
-CMD ["mysqld", "--datadir=/var/lib/mysql", "--user=mysql", "--default-storage-engine=InnoDB"]
+CMD ["mysqld", "--datadir=/var/lib/mysql", "--user=mysql", "--default-storage-engine=InnoDB", "--sql-mode=ONLY_FULL_GROUP_BY"]
